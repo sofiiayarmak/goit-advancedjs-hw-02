@@ -2,18 +2,16 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Таймер зворотного відліку</title>
+    <title>Timer Page</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <main>
-      <section>
-        <a href="./index.html">Go back</a>
-        <br /><br />
-
-        <input type="text" id="datetime-picker" />
-        <button type="button" data-start disabled>Start</button>
+      <div class="container">
+        <div class="controls">
+          <input type="text" id="datetime-picker" />
+          <button type="button" data-start disabled>Start</button>
+        </div>
 
         <div class="timer">
           <div class="field">
@@ -33,7 +31,9 @@
             <span class="label">Seconds</span>
           </div>
         </div>
-      </section>
+
+        <load src="./partials/back-link.html" />
+      </div>
     </main>
 
     <script type="module" src="./js/1-timer.js"></script>
