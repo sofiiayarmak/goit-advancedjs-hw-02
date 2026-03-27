@@ -50,14 +50,12 @@ button[data-start]:disabled {
 .timer {
   display: flex;
   gap: 24px;
-  justify-content: center;
   margin-top: 32px;
 }
 
 .field {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .value {
@@ -71,4 +69,135 @@ button[data-start]:disabled {
   text-transform: uppercase;
   color: #2e2f42;
   font-weight: 400;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 360px;
+  margin: 20px auto;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 8px;
+}
+
+.form-label input {
+  padding: 8px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-fieldset {
+  display: flex;
+  text-align: left;
+  gap: 12px;
+  padding: 10px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+.submit-btn {
+  padding: 10px;
+  background-color: #4e75ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #3b5edb;
+}
+
+.form {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 360px;
+  margin-left: 0;
+}
+
+.form-label-number {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 16px;
+  color: #2e2f42;
+}
+
+.form-label-number input {
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-label-number input:hover {
+  border-color: #000;
+}
+
+.form-fieldset {
+  display: flex;
+  gap: 12px;
+  padding: 8px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+.form-fieldset legend {
+  padding: 0 4px;
+  font-size: 16px;
+  color: #2e2f42;
+}
+
+.radio-group {
+  display: flex;
+  gap: 24px;
+}
+
+.form-label-radio {
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-label-radio input[type='radio'] {
+  width: 18px;
+  height: 18px;
+  accent-color: #4e75ff;
+}
+
+.submit-btn {
+  height: 40px;
+  width: 100%;
+  background-color: #4e75ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #3b5edb;
+}
+
+.submit-btn:focus {
+  box-shadow: 0 0 0 4px rgba(78, 117, 255, 0.5);
 }
