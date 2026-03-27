@@ -1,25 +1,19 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Timer Page</title>
+    <title>Таймер зворотного відліку</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load
-      src="./partials/header.html"
-      icon-path="./img/sprite.svg#logo"
-      highlight-act="active"
-    />
-
     <main>
-      <div class="container">
-        <div class="controls">
-          <input type="text" id="datetime-picker" />
-          <button type="button" data-start disabled>Start</button>
-        </div>
+      <section>
+        <a href="./index.html">Go back</a>
+        <br /><br />
+
+        <input type="text" id="datetime-picker" />
+        <button type="button" data-start disabled>Start</button>
 
         <div class="timer">
           <div class="field">
@@ -39,13 +33,9 @@
             <span class="label">Seconds</span>
           </div>
         </div>
-
-        <load src="./partials/back-link.html" />
-      </div>
+      </section>
     </main>
 
-    <load src="./partials/footer.html" />
-
-    <script type="module" src="./src/1-timer.js"></script>
+    <script type="module" src="./js/1-timer.js"></script>
   </body>
 </html>
